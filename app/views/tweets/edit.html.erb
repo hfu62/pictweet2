@@ -1,6 +1,5 @@
  <div class="contents row">
-    <form_tag   , method: :patch>
-    form_tagメソッドを使って「/tweets/編集するツイートのid」に「patch」メソッドで情報を送信
+    <%= form_tag("/tweets/#{@tweet.id}", method: :patch ) do %>
       <h3>
         編集する
       </h3>
