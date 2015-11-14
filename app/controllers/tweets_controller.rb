@@ -20,6 +20,9 @@ class TweetsController < ApplicationController
     end
   end
 
+  def edit
+    @tweet = Tweet.find(params[:id])
+
   private
   def tweet_params
     params.permit(:image, :text)
